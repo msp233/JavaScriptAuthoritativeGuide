@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>日期和时间</title>
+    <script>
+        var then = new Date(2017,8,1);//里面不写东西默认当前时间  写时间格式  2017,0,1    #即为2017年一月一日 0代表一月
+        console.log('new Date(2017,0,1)='+then);
+
+        var later = new Date(2017,8,1,17,10,30); //同一天的5:10:30pm
+        var now = new Date();//当前时间
+        var elapsed = now -then; //日期减法 ：计算时间间隔的毫秒数
+        var year = later.getFullYear(); //=>2017; 获取年份
+        var month = later.getMonth();  //=>0: 从0开始计数的月份
+        var date = later.getDate();  // =>1 :从1开始计数的天数
+        var day = later.getDay();   //=>5:得到星期几，0代表星期日，5代表周一
+        console.log('day='+day);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
