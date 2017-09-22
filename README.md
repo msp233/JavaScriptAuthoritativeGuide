@@ -2,7 +2,7 @@
 
 > kuaibao media mms
 
-[my blog](http://www.maoshipng.top "facepalm")
+[my blog](http://www.maoshiping.top "facepalm")
 ## 使用
 
 ``` bash
