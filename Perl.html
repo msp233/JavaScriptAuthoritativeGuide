@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>匹配模式-正则</title>
+    <script>
+        var text = 'testing: 1 , 2 , 3 ';
+        var pattern = /\d+/g //匹配包含一个或多个数字的示例
+        console.log('变量text是字符串 "testing: 1 , 2 , 3 "');
+        console.log('变量pattern是 /\d+/g');
+
+        console.log(pattern);
+
+
+        let re1 = pattern.test(text);
+        console.log('pattern.test(text):'+re1);
+
+        let re2 = text.search(pattern);//首次匹配成功的位置
+        console.log('text.search(pattern):首次匹配成功的位置');
+        console.log(re2);
+
+        let re3 = text.match(pattern);  //所匹配成功的数组
+        console.log('text.match(pattern):所匹配成功的数组');
+        console.log(re3);
+
+        let re4 = text.replace(pattern,'#'); //将匹配出来的字符替换为#
+        console.log('text.replace(pattern,\'#\'); //将匹配出来的字符替换为#');
+        console.log(re4);
+
+        console.log(text);
+
+        let re5 = text.split(/\D+/); //用非数字字符截取字符串
+        console.log('text.split(/\\D+/); //用非数字字符截取字符串');
+        console.log(re5);
+
+    </script>
+</head>
+
+<body>
+/^HTML/ //匹配以HTML开始的字符串<br/>
+/[1-9][0-9]*/  //匹配一个非零数字，后面是任意个数字<br/>
+/\bjavascript\b/i   //匹配单词javascript ，忽略大小写<br/>
+
+</body>
+</html>

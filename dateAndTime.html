@@ -10,9 +10,13 @@
         var later = new Date(2017,8,1,17,10,30); //同一天的5:10:30pm
         var now = new Date();//当前时间
         var elapsed = now -then; //日期减法 ：计算时间间隔的毫秒数
+        console.log('elapsed='+elapsed);
         var year = later.getFullYear(); //=>2017; 获取年份
+        console.log('year='+year);
         var month = later.getMonth();  //=>0: 从0开始计数的月份
+        console.log('month='+month);
         var date = later.getDate();  // =>1 :从1开始计数的天数
+        console.log('date='+date);
         var day = later.getDay();   //=>5:得到星期几，0代表星期日，5代表周一
         console.log('day='+day);
     </script>
